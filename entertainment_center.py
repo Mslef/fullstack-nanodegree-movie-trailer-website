@@ -1,0 +1,20 @@
+import media
+import fresh_tomatoes
+import psycopg2
+
+
+hulk = media.Movie('The Incredible Hulk', 'Bruce Banner, a scientist on the run from the U.S. Government must find a cure for the monster he emerges whenever he loses his temper. However, Banner then must fight a soldier whom unleashes himself as a threat stronger than he.' ,'http://upload.wikimedia.org/wikipedia/en/8/88/The_Incredible_Hulk_poster.jpg', 'https://www.youtube.com/watch?v=xbqNb2PFKKA')
+thor = media.Movie('Thor', 'The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.' ,'http://upload.wikimedia.org/wikipedia/en/f/fc/Thor_poster.jpg', 'https://www.youtube.com/watch?v=JOddp-nlNvQ')
+thor_2 = media.Movie('Thor: The Dark World', 'When Dr Jane Foster gets cursed with a powerful object, Thor must protect it before an army and its ruthless leader try to get their hands on it to take over the remains of Earth.', 'http://upload.wikimedia.org/wikipedia/en/7/7e/Thor_-_The_Dark_World_poster.jpg', 'https://www.youtube.com/watch?v=npvJ9FTgZbM')
+captain_america = media.Movie('Captain America: The First Avenger', 'Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.', 'http://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg', 'https://www.youtube.com/watch?v=JerVrbLldXw')
+captain_america_2 = media.Movie('Captain America: The Winter Soldier', 'As Steve Rogers struggles to embrace his role in the modern world, he teams up with another super soldier, the black widow, to battle a new threat from old history: an assassin known as the Winter Soldier.', 'http://upload.wikimedia.org/wikipedia/en/e/e8/Captain_America_The_Winter_Soldier.jpg', 'https://www.youtube.com/watch?v=tbayiPxkUMM')
+iron_man = media.Movie('Iron Man', 'After being held captive in an Afghan cave, an industrialist creates a unique weaponized suit of armor to fight against evil. This leads him to conflict within his own company.', 'http://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.JPG', 'https://www.youtube.com/watch?v=8hYlB38asDY')
+iron_man_2 = media.Movie('Iron Man 2', 'With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father\'s legacy.', 'http://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg', 'https://www.youtube.com/watch?v=wKtcmiifycU')
+iron_man_3 = media.Movie('Iron Man 3', 'When Tony Stark\'s world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.', 'http://upload.wikimedia.org/wikipedia/en/d/d5/Iron_Man_3_theatrical_poster.jpg', 'https://www.youtube.com/watch?v=oYSD2VQagc4')
+guardians = media.Movie('Guardians of the Galaxy', 'A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.', 'http://upload.wikimedia.org/wikipedia/en/8/8f/GOTG-poster.jpg', 'https://www.youtube.com/watch?v=d96cjJhvlMA')
+avengers = media.Movie('The Avengers', 'Earth\'s mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.', 'http://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg', 'https://www.youtube.com/watch?v=eOrNdBpGMv8')
+avengers_2 = media.Movie('The Avengers: Age of Ultron', 'When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and it is up to the Avengers to stop the villainous Ultron from enacting his terrible plans.', 'http://upload.wikimedia.org/wikipedia/en/1/1b/Avengers_Age_of_Ultron.jpg', 'https://www.youtube.com/watch?v=JAUoeqvedMo')
+
+movies = [hulk, thor, thor_2, captain_america, captain_america_2, iron_man, iron_man_2, iron_man_3, guardians, avengers, avengers_2]
+
+fresh_tomatoes.open_movies_page(movies)
